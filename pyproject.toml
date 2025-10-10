@@ -1,0 +1,18 @@
+[project]
+name = "plugcom"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "plugcom-core",
+    "plugcom-doit",
+]
+
+
+[tool.uv.workspace]
+members = ["bin/*"]
+
+[tool.uv.sources]
+plugcom-core = { workspace = true }
+plugcom-doit = { workspace = true }

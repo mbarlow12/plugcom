@@ -1,0 +1,21 @@
+[project]
+name = "plugcom-doit"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Michael Barlow", email = "m.barlow12@gmail.com" }]
+requires-python = ">=3.13.7"
+dependencies = ["plugcom-core"]
+
+[project.entry-points.plugcom]
+doit = "plugcom.doit"
+
+[build-system]
+requires = ["uv_build>=0.9.1,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "plugcom.doit"
+
+[tool.uv.sources]
+plugcom-core = { workspace = true }

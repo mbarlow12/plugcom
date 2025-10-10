@@ -1,0 +1,18 @@
+[project]
+name = "plugcom-core"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Michael Barlow", email = "m.barlow12@gmail.com" }]
+requires-python = ">=3.13.7"
+dependencies = ["click>=8.3.0", "pluggy>=1.6.0"]
+
+[project.scripts]
+plg = "plugcom.core.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9.1,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "plugcom.core"
