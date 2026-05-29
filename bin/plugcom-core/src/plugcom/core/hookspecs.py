@@ -5,6 +5,6 @@ from plugcom.core import hookspec
 
 
 @hookspec
-def plugcom_add_command(cmd_dict: MutableMapping[str, Command]):
+def add_command(cmd_dict: MutableMapping[str, Command]):
     """Define your subcommand and add it to the dictionary"""
     ...
